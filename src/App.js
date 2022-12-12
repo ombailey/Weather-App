@@ -20,7 +20,7 @@ function App() {
 
   const getData = useCallback(async (city) => {
     const info = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=77f552816a9043c686941503221012&q=${city}&days=1&aqi=yes&alerts=no
+      `https://api.weatherapi.com/v1/forecast.json?key=77f552816a9043c686941503221012&q=${city}&days=1&aqi=yes&alerts=no
       `
     );
     const response = await info.json();
