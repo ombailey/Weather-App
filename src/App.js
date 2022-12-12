@@ -77,6 +77,13 @@ function App() {
     };
 
     toggleBgImg();
+
+    let input = document.querySelector(".city");
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        setCity(input.value);
+      }
+    });
   }, []);
 
   const setCity = () => {
@@ -114,13 +121,6 @@ function App() {
     changeCity(JSON.parse(window.localStorage.getItem("city")));
     changeLocation(JSON.parse(window.localStorage.getItem("location")));
     changeCondition(JSON.parse(window.localStorage.getItem("condition")));
-
-    let city = document.querySelector(".city");
-    city.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        setCity(city.value);
-      }
-    });
   }, []);
 
   useEffect(() => {
