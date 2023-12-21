@@ -16,7 +16,7 @@ body {
 .app-div {
   background-color: rgba(0, 130, 255, 0.8);
   width: 30vw;
-  height: 75vh;
+  // height: 100vh;
   left: 35%;
   top: 5%;
   position: absolute;
@@ -30,7 +30,7 @@ body {
   opacity: 0.9;
   left: 0%;
   width: 29.7vw;
-  height: 74.7vh;
+  height: 100%;
   z-index: -1;
   border-radius: 20px;
 }
@@ -42,7 +42,7 @@ button {
   width: auto;
   border-radius: 3px;
   padding: 5px;
-  font-size: 20px;
+  font-size: .7rem;
 }
 
 .city-search {
@@ -50,7 +50,7 @@ button {
 }
 
 input {
-  height: 35px;
+  height: 5vh;
   color: black;
   text-align: left;
 }
@@ -59,38 +59,38 @@ input {
   cursor: pointer;
 
   h2 {
-    font-size: 54px;
+    font-size: 1.5rem;
   }
 }
 
 .temp {
-  font-size: 50px;
+  font-size: 1.4rem;
 }
 
 .weather-text {
-  margin-top: 10px;
-  font-size: 30px;
+  margin-top: .5vh;
+  font-size: 1.2rem;
 }
 
 .hi-lo {
   display: flex;
-  margin-top: 10px;
+  margin-top:.5vh;
   div {
     margin: 0 10px;
   }
 }
 
 .forecast-temp {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .other-weather {
   display: grid;
-  grid-template-rows: repeat(2, 10vh);
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, 20vh);
+  grid-template-rows: repeat(2, 5vw);
+  grid-gap: 1vw;
+  grid-template-columns: repeat(2, 25vh);
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 1vh;
   div {
     border: 2px solid cornflowerblue;
     border-radius: 10px;
@@ -99,18 +99,18 @@ input {
     box-shadow: 2px 2px cornflowerblue;
 
     h3 {
-      font-size: 24px;
+      font-size: .7rem;
       color: rgba(150, 200, 255, 1);
     }
 
     p {
-      font-size: 36px;
+      font-size: .9rem;
     }
   }
 }
 
 .uv-level {
-  font-size: 22px;
+  font-size: .7rem;
 }
 
 .forecast-header {
@@ -118,67 +118,74 @@ input {
 }
 
 .search {
-  font-size: 40px;
+  font-size: 1.2rem;
 }
 
 .condition-img {
-  margin-top: 15px;
+  margin-top: .5vh;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 451px) {
+@media screen and (max-width: 1024px) and (min-width: 451px) {
   .app-div {
     width: 80vw;
-    height: 80vh;
     left: 10vw;
   }
 
   .bg-imgs {
     width: 79.7vw;
-    height: 79.7vh;
   }
 
   .other-weather {
     grid-template-columns: repeat(2, 35vw);
     grid-template-rows: repeat(2, 10vh);
-    margin-top: 5vh;
+    margin-top: 1.5vh;
     div {
       h3 {
-        font-size: 36px;
+        font-size: 1rem;
       }
 
       p {
-        font-size: 48px;
+        font-size: 1.3rem;
       }
     }
   }
 
   .temp {
-    font-size: 72px;
+    font-size: 1.75rem;
   }
 
   .weather-text {
-    font-size: 40px;
+    font-size: 1.5rem;
   }
 
   .hi-lo {
-    margin-top: 2vh;
+    margin-top: 1vh;
   }
 
   .forecast-header {
-    font-size: 36px;
+    font-size: 1.5rem;
   }
 
   .forecast-temp {
-    font-size: 32px;
+    font-size: 1.3rem;
   }
+
+  button{
+    font-size: 1rem;
+  }
+
+  input {
+    height: 5vh;
+  }
+
 }
 
 @media screen and (max-width: 450px) {
   .app-div {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     left: 0;
-    top: 0;
+    margin-top: 10vh;
   }
 
   .other-weather {
@@ -193,7 +200,20 @@ input {
   }
 
   .bg-imgs {
-    height: 100vh;
+    // height: 100vh;
     width: 100vw;
   }
+
+  .weather-header {
+    cursor: pointer;
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .search{
+    font-size: 1.7rem;
+  }
+  
 }

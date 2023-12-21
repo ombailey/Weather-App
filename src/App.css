@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 * {
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   color: white;
 }
 
@@ -18,14 +15,12 @@ body {
 .app-div {
   background-color: rgba(0, 130, 255, 0.8);
   width: 30vw;
-  height: 75vh;
   left: 35%;
   top: 5%;
   position: absolute;
   border: 2px solid cornflowerblue;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 100, 255, 0.5);
-          box-shadow: 0px 2px 5px rgba(0, 100, 255, 0.5);
+  box-shadow: 0px 2px 5px rgba(0, 100, 255, 0.5);
 }
 
 .bg-imgs {
@@ -33,7 +28,7 @@ body {
   opacity: 0.9;
   left: 0%;
   width: 29.7vw;
-  height: 74.7vh;
+  height: 100%;
   z-index: -1;
   border-radius: 20px;
 }
@@ -45,7 +40,7 @@ button {
   width: auto;
   border-radius: 3px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 0.7rem;
 }
 
 .city-search {
@@ -53,7 +48,7 @@ button {
 }
 
 input {
-  height: 35px;
+  height: 5vh;
   color: black;
   text-align: left;
 }
@@ -61,142 +56,134 @@ input {
 .weather-header {
   cursor: pointer;
 }
-
 .weather-header h2 {
-  font-size: 54px;
+  font-size: 1.5rem;
 }
 
 .temp {
-  font-size: 50px;
+  font-size: 1.4rem;
 }
 
 .weather-text {
-  margin-top: 10px;
-  font-size: 30px;
+  margin-top: 0.5vh;
+  font-size: 1.2rem;
 }
 
 .hi-lo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  margin-top: 0.5vh;
 }
-
 .hi-lo div {
   margin: 0 10px;
 }
 
 .forecast-temp {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .other-weather {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (10vh)[2];
-      grid-template-rows: repeat(2, 10vh);
-  grid-gap: 10px;
-  -ms-grid-columns: (20vh)[2];
-      grid-template-columns: repeat(2, 20vh);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
+  grid-template-rows: repeat(2, 5vw);
+  grid-gap: 1vw;
+  grid-template-columns: repeat(2, 25vh);
+  justify-content: center;
+  margin-top: 1vh;
 }
-
 .other-weather div {
   border: 2px solid cornflowerblue;
   border-radius: 10px;
   background: rgba(0, 130, 255, 0.8);
   color: white;
-  -webkit-box-shadow: 2px 2px cornflowerblue;
-          box-shadow: 2px 2px cornflowerblue;
+  box-shadow: 2px 2px cornflowerblue;
 }
-
 .other-weather div h3 {
-  font-size: 24px;
-  color: #96c8ff;
+  font-size: 0.7rem;
+  color: rgb(150, 200, 255);
 }
-
 .other-weather div p {
-  font-size: 36px;
+  font-size: 0.9rem;
 }
 
 .uv-level {
-  font-size: 22px;
+  font-size: 0.7rem;
 }
 
 .forecast-header {
-  color: #96c8ff;
+  color: rgb(150, 200, 255);
 }
 
 .search {
-  font-size: 40px;
+  font-size: 1.2rem;
 }
 
 .condition-img {
-  margin-top: 15px;
+  margin-top: 0.5vh;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 451px) {
+@media screen and (max-width: 1024px) and (min-width: 451px) {
   .app-div {
     width: 80vw;
-    height: 80vh;
     left: 10vw;
   }
   .bg-imgs {
     width: 79.7vw;
-    height: 79.7vh;
   }
   .other-weather {
-    -ms-grid-columns: (35vw)[2];
-        grid-template-columns: repeat(2, 35vw);
-    -ms-grid-rows: (10vh)[2];
-        grid-template-rows: repeat(2, 10vh);
-    margin-top: 5vh;
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: repeat(2, 10vh);
+    margin-top: 1.5vh;
   }
   .other-weather div h3 {
-    font-size: 36px;
+    font-size: 1rem;
   }
   .other-weather div p {
-    font-size: 48px;
+    font-size: 1.3rem;
   }
   .temp {
-    font-size: 72px;
+    font-size: 1.75rem;
   }
   .weather-text {
-    font-size: 40px;
+    font-size: 1.5rem;
   }
   .hi-lo {
-    margin-top: 2vh;
+    margin-top: 1vh;
   }
   .forecast-header {
-    font-size: 36px;
+    font-size: 1.5rem;
   }
   .forecast-temp {
-    font-size: 32px;
+    font-size: 1.3rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  input {
+    height: 5vh;
   }
 }
-
 @media screen and (max-width: 450px) {
   .app-div {
     width: 100vw;
-    height: 100vh;
     left: 0;
-    top: 0;
+    margin-top: 10vh;
   }
   .other-weather {
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
-    -ms-grid-columns: (40vw)[2];
-        grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 40vw);
   }
   .other-weather div p {
     font-size: 30px;
   }
   .bg-imgs {
-    height: 100vh;
     width: 100vw;
   }
-}
-/*# sourceMappingURL=app.css.map */
+  .weather-header {
+    cursor: pointer;
+  }
+  .weather-header h2 {
+    font-size: 2.2rem;
+  }
+  .search {
+    font-size: 1.7rem;
+  }
+}/*# sourceMappingURL=app.css.map */
