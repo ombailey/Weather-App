@@ -164,8 +164,9 @@ input {
 @media screen and (max-width: 450px) {
   .app-div {
     width: 100vw;
+    height: 100vh;
     left: 0;
-    margin-top: 10vh;
+    top: 0;
   }
   .other-weather {
     grid-template-rows: repeat(2, auto);
@@ -175,6 +176,7 @@ input {
     font-size: 30px;
   }
   .bg-imgs {
+    height: 100vh;
     width: 100vw;
   }
   .weather-header {
